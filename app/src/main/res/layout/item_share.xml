@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvShareName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Name"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:layout_marginStart="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvShareName"
+        app:layout_constraintStart_toEndOf="@+id/tvShareName"
+        app:layout_constraintTop_toTopOf="@+id/tvShareName" />
+    <TextView
+        android:id="@+id/tvSell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sell"
+        android:layout_marginStart="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBuy"
+        app:layout_constraintStart_toEndOf="@+id/tvBuy"
+        app:layout_constraintTop_toTopOf="@+id/tvBuy" />
+    <TextView
+        android:id="@+id/tvProfit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profit"
+        android:layout_marginStart="30dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSell"
+        app:layout_constraintStart_toEndOf="@+id/tvSell"
+        app:layout_constraintTop_toTopOf="@+id/tvSell" />
+</androidx.constraintlayout.widget.ConstraintLayout>
